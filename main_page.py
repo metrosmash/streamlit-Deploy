@@ -16,7 +16,7 @@ import pickle as pc
 
 st.title('NY2017 Batch Prediction')
 #loading the model
-model_in = open('https://github.com/metrosmash/streamlit-Deploy/models/logreg.pkl','rb')
+model_in = open('metrosmash/streamlit-Deploy/models/logreg.pkl','rb')
 model = pc.load(model_in)
 
 #st.title('NY2017 Batch Prediction')
