@@ -22,7 +22,7 @@ model = pc.load(model_in)
 #st.title('NY2017 Batch Prediction')
 
 dataf = st.file_uploader('Upload Your CSV File Here')
-
+st.write('NOTE: Please ignore The error It will Be rectified soon ')
 if dataf is not None:
     def load_data(file):
         df = pd.read_csv(file,low_memory=False)
