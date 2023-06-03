@@ -13,11 +13,13 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import OneHotEncoder
 
 import pickle as pc
+
+st.title('NY2017 Batch Prediction')
 #loading the model
 model_in = open('c:/users/user/desktop/projects/gdsc/streamlit/models/Decisionreg1.pkl','rb')
 model = pc.load(model_in)
 
-st.title('NY2017 Batch Prediction')
+#st.title('NY2017 Batch Prediction')
 
 dataf = st.file_uploader('Upload Your CSV File Here')
 
